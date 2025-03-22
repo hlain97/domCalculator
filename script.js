@@ -7,8 +7,7 @@ let screenContent = document.createElement('p');
 
 //Im so confused bro
 
-let displayText = [
-];
+let displayText = [];
 let round = false;
 let operandOne = "!";
 let operandTwo = "!";
@@ -58,8 +57,7 @@ document.addEventListener("keydown", function(event) {
         operator = 0;
         operandOne = "!";
         operandTwo = "!";
-      } else {
-      }
+      } 
     }
   });
 
@@ -83,8 +81,8 @@ let createOperators = function(e){
                 displayText = [""];
                 screen.appendChild(screenContent);
                 round = false;
-                operandOne = 0;
-                operandTwo = 0;
+                operandOne = "!";
+                operandTwo = "!";
                 operator = 0;
             });
             buttonLabel.textContent = "CE";
@@ -272,6 +270,3 @@ for(let i = 0; i < buttons; i++){
     }
 
 }
-
-
-
