@@ -8,8 +8,8 @@ let screenContent = document.createElement('p');
 let displayText = [
 ];
 let round = false;
-let operandOne = 0;
-let operandTwo = 0;
+let operandOne = "!";
+let operandTwo = "!";
 let operator = 0;
 
 document.addEventListener("keydown", function(event) {
@@ -80,21 +80,15 @@ let createOperators = function(e){
             let buttonLabel = document.createElement('p');
             button.setAttribute('class', 'btn');  
             button.addEventListener('click', function(e){
-                if(round == false){
+                if(round == false && operandOne != 0){
                     screenContent.textContent = "+";
                     screen.appendChild(screenContent);
                     operandOne = parseInt(displayText.join(''));
                     console.log(operandOne);
                     displayText = [];
                     round = true;
-                    operator += 1;
+                    operator = 1;
                 } else {
-                    screenContent.textContent = "+";
-                    screen.appendChild(screenContent);
-                    operandTwo = parseInt(displayText.join(''));
-                    console.log(operandTwo);
-                    displayText = [];
-                    round = false;
                 }
             });
             buttonLabel.textContent = "+";
@@ -105,21 +99,15 @@ let createOperators = function(e){
             let buttonLabel = document.createElement('p');
             button.setAttribute('class', 'btn');
             button.addEventListener('click', function(e){
-                if(round == false){
+                if(round == false && operandOne != 0){
                     screenContent.textContent = "-";
                     screen.appendChild(screenContent);
                     operandOne = parseInt(displayText.join(''));
                     console.log(operandOne);
                     displayText = [];
                     round = true;
-                    operator += 2;
+                    operator = 2;
                 } else {
-                    screenContent.textContent = "-";
-                    screen.appendChild(screenContent);
-                    operandTwo = parseInt(displayText.join(''));
-                    console.log(operandTwo);
-                    displayText = [];
-                    round = false;
                 }
             });
             buttonLabel.textContent = "-";
@@ -130,21 +118,15 @@ let createOperators = function(e){
             let buttonLabel = document.createElement('p');
             button.setAttribute('class', 'btn');
             button.addEventListener('click', function(e){
-                if(round == false){
+                if(round == false && operandOne != 0){
                     screenContent.textContent = "*";
                     screen.appendChild(screenContent);
                     operandOne = parseInt(displayText.join(''));
                     console.log(operandOne);
                     displayText = [];
                     round = true;
-                    operator += 3;
+                    operator = 3;
                 } else {
-                    screenContent.textContent = "*";
-                    screen.appendChild(screenContent);
-                    operandTwo = parseInt(displayText.join(''));
-                    console.log(operandTwo);
-                    displayText = [];
-                    round = false;
                 }
             });
             buttonLabel.textContent = "*";
@@ -155,7 +137,7 @@ let createOperators = function(e){
             let buttonLabel = document.createElement('p');
             button.setAttribute('class', 'btn');
             button.addEventListener('click', function(e){
-                if(round == false){
+                if(round == false && operandOne != 0){
                     screenContent.textContent = "/";
                     screen.appendChild(screenContent);
                     operandOne = parseInt(displayText.join(''));
@@ -164,12 +146,6 @@ let createOperators = function(e){
                     round = true;
                     operator = 4;
                 } else {
-                    screenContent.textContent = "/";
-                    screen.appendChild(screenContent);
-                    operandTwo = parseInt(displayText.join(''));
-                    console.log(operandTwo);
-                    displayText = [];
-                    round = false;
                 }
             });
             buttonLabel.textContent = "/";
