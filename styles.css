@@ -37,8 +37,11 @@ body {
     flex-wrap: wrap;
     padding: 20px;
     width: 500px;
-    height: 500px;
+    height: 800px;
     border: red solid 2px;
+    background-image: url(./images/frog.jpg);
+    background-repeat: repeat;
+    background-size: contain;
 }
 
 #screen {
