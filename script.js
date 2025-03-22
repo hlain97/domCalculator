@@ -71,6 +71,7 @@ let createOperators = function(e){
                 round = false;
                 operandOne = 0;
                 operandTwo = 0;
+                operator = 0;
             });
             buttonLabel.textContent = "CE";
             button.appendChild(buttonLabel);
