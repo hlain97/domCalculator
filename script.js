@@ -5,6 +5,8 @@ let panel = document.querySelector('#container');
 let screen = document.querySelector('#screen');
 let screenContent = document.createElement('p');
 
+//Im so confused bro
+
 let displayText = [
 ];
 let round = false;
