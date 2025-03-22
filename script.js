@@ -16,28 +16,28 @@ document.addEventListener("keydown", function(event) {
     if (event.key === "Enter") {
         let result = 0;
 
-      if(operator = 1){
+      if(operator == 1){
         operandTwo = parseInt(displayText.join(''));
         displayText = [];
         round = false;
         result = (operandOne + operandTwo);
         screenContent.textContent = result.toString();
         screen.appendChild(screenContent);
-      } else if ( operator = 2){
+      } else if ( operator == 2){
         operandTwo = parseInt(displayText.join(''));
         displayText = [];
         round = false;
         result = (operandOne - operandTwo);
         screenContent.textContent = result.toString();
         screen.appendChild(screenContent);
-      } else if (operator = 3){
+      } else if (operator == 3){
         operandTwo = parseInt(displayText.join(''));
         displayText = [];
         round = false;
         result = (operandOne * operandTwo);
         screenContent.textContent = result.toString();
         screen.appendChild(screenContent);
-      } else if ( operator = 4){
+      } else if ( operator == 4){
         operandTwo = parseInt(displayText.join(''));
         displayText = [];
         round = false;
@@ -183,28 +183,28 @@ let createOperators = function(e){
             button.addEventListener('click', function(e){
                 let result = 0;
 
-                if(operator = 1){
+                if(operator == 1){
                   operandTwo = parseInt(displayText.join(''));
                   displayText = [];
                   round = false;
                   result = (operandOne + operandTwo);
                   screenContent.textContent = result.toString();
                   screen.appendChild(screenContent);
-                } else if ( operator = 2){
+                } else if ( operator == 2){
                   operandTwo = parseInt(displayText.join(''));
                   displayText = [];
                   round = false;
                   result = (operandOne - operandTwo);
                   screenContent.textContent = result.toString();
                   screen.appendChild(screenContent);
-                } else if (operator = 3){
+                } else if (operator == 3){
                   operandTwo = parseInt(displayText.join(''));
                   displayText = [];
                   round = false;
                   result = (operandOne * operandTwo);
                   screenContent.textContent = result.toString();
                   screen.appendChild(screenContent);
-                } else if ( operator = 4){
+                } else if ( operator == 4){
                   operandTwo = parseInt(displayText.join(''));
                   displayText = [];
                   round = false;
