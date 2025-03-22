@@ -25,6 +25,9 @@ document.addEventListener("keydown", function(event) {
         result = (operandOne + operandTwo);
         screenContent.textContent = result.toString();
         screen.appendChild(screenContent);
+        operator = 0;
+        operandOne = "!";
+        operandTwo = "!";
       } else if ( operator == 2){
         operandTwo = parseInt(displayText.join(''));
         displayText = [];
@@ -32,6 +35,9 @@ document.addEventListener("keydown", function(event) {
         result = (operandOne - operandTwo);
         screenContent.textContent = result.toString();
         screen.appendChild(screenContent);
+        operator = 0;
+        operandOne = "!";
+        operandTwo = "!";
       } else if (operator == 3){
         operandTwo = parseInt(displayText.join(''));
         displayText = [];
@@ -39,6 +45,9 @@ document.addEventListener("keydown", function(event) {
         result = (operandOne * operandTwo);
         screenContent.textContent = result.toString();
         screen.appendChild(screenContent);
+        operator = 0;
+        operandOne = "!";
+        operandTwo = "!";
       } else if ( operator == 4){
         operandTwo = parseInt(displayText.join(''));
         displayText = [];
@@ -46,6 +55,9 @@ document.addEventListener("keydown", function(event) {
         result = (operandOne / operandTwo);
         screenContent.textContent = result.toString();
         screen.appendChild(screenContent);
+        operator = 0;
+        operandOne = "!";
+        operandTwo = "!";
       } else {
       }
     }
@@ -169,6 +181,9 @@ let createOperators = function(e){
                   result = (operandOne + operandTwo);
                   screenContent.textContent = result.toString();
                   screen.appendChild(screenContent);
+                  operator = 0;
+                  operandOne = "!";
+                  operandTwo = "!";
                 } else if ( operator == 2){
                   operandTwo = parseInt(displayText.join(''));
                   displayText = [];
@@ -176,6 +191,9 @@ let createOperators = function(e){
                   result = (operandOne - operandTwo);
                   screenContent.textContent = result.toString();
                   screen.appendChild(screenContent);
+                  operator = 0;
+                  operandOne = "!";
+                  operandTwo = "!";
                 } else if (operator == 3){
                   operandTwo = parseInt(displayText.join(''));
                   displayText = [];
@@ -183,6 +201,9 @@ let createOperators = function(e){
                   result = (operandOne * operandTwo);
                   screenContent.textContent = result.toString();
                   screen.appendChild(screenContent);
+                  operator = 0;
+                  operandOne = "!";
+                  operandTwo = "!";
                 } else if ( operator == 4){
                   operandTwo = parseInt(displayText.join(''));
                   displayText = [];
@@ -190,6 +211,9 @@ let createOperators = function(e){
                   result = (operandOne / operandTwo);
                   screenContent.textContent = result.toString();
                   screen.appendChild(screenContent);
+                  operator = 0;
+                  operandOne = "!";
+                  operandTwo = "!";
                 } else {
                 }
             });
